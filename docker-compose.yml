@@ -1,0 +1,11 @@
+services:
+  path_sampler:
+    build: .
+    image: bayu_ros:test
+    environment:
+      - "ROS_MASTER_URI=http://localhost:11311"
+    volumes:
+      - ../path_sampler:/catkin_ws/src/path_sampler
+    command: ["bash","-c",". /opt/ros/noetic/setup.bash && cd catkin_ws && catkin_make && . devel/setup.bash && roslaunch path_sampler path_sampler.launch"]
+    tty: true
+    network_mode: "host"

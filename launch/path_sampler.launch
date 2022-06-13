@@ -1,0 +1,10 @@
+<launch>
+  <!-- path_sampler -->
+  <node pkg="path_sampler" type="path_sampler.py" respawn="false" name="path_sampler" output="screen">
+    <param name="data_path" value="$(find path_sampler)/data/path_test.bag" />
+    <param name="num_of_samples" value="250" />
+    <param name="sampled_topic" value="/vslam2d_pose" />
+  </node>
+  
+  
+</launch>

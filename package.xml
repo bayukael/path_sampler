@@ -1,0 +1,19 @@
+<package>
+  <name>path_sampler</name>
+  <version>0.1.0</version>
+  <description>
+      To sample given rosbag containing path
+  </description>
+  <maintainer email="bayu.kael@gmail.com">Bayu Kanugrahan Luknanto</maintainer>
+  <author email="bayu.kael@gmail.com">Bayu Kanugrahan Luknanto</author>
+  <license>BSD</license>
+
+  <buildtool_depend>catkin</buildtool_depend>
+  <build_depend>geometry_msgs</build_depend>
+  <build_depend>rospy</build_depend>
+  <build_depend>std_msgs</build_depend>
+  <run_depend>geometry_msgs</run_depend>
+  <run_depend>rospy</run_depend>
+  <run_depend>std_msgs</run_depend>
+
+</package>
